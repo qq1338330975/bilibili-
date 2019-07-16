@@ -1,0 +1,51 @@
+<view class="main">
+    <!-- 导航条 -->
+    <MyTitle></MyTitle>
+    <view class="nav-wrap">
+        <!-- 自己滚动的区域组件 -->
+        <scroll-view class="nav" scroll-x="{{true}}">
+            <viwe bindtap="activeNav" data-index = "{{index}}" class="nav-item {{index == currentIndexNav ? 'active' : ' '}}" wx:for="{{navList}}" wx:key="{{index}}">
+                {{item.text}}
+            </viwe>
+        </scroll-view>
+    </view>
+    <!-- 轮播图 -->
+    <view class="slides">
+        <swiper autoplay indicator-dots circular>
+            <swiper-item wx:for="{{swiperList}}" wx:key="{{index}}" >
+                <navigator>
+                    <image src="{{item.imgSrc}}" mode="widthFix"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 视频列表 -->
+    <view class="video-wrap">
+        <navigator url="../detail/detail?id={{item.id}}" class="video-item" wx:for="{{videosList}}" wx:key="{{index}}">
+            <!-- 图片容器 -->
+            <view class="video-img">
+                <!-- 图片 -->
+                <image src="{{item.imgSrc}}" mode="widthFix" ></image>
+                <!-- 播放量 -->
+                <view class="video-info">
+                    <!-- 点击量 -->
+                    <view class="play-count-wrap">
+                        <!-- 图标 -->
+                        <text class="fa fa-play-circle-o"></text>
+                        <!-- 数值 -->
+                        <text class="play-count">{{item.playCount}}</text>
+                    </view>
+                    <!-- 评论量 -->
+                    <view class="comment-count-wrap">
+                        <!-- 图标 -->
+                        <text class="fa fa-commenting-o"></text>
+                        <!-- 数值 -->
+                        <text class="comment-count">{{item.commentCount}}</text>
+                    </view>
+                </view>
+            </view>
+            <!-- 标题 -->
+            <view class="video-title">{{item.desc}}</view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,58 @@
+.main {
+  padding: 10rpx;
+  color: #666;
+}
+.main .video-info {
+  margin-top: 10rpx;
+}
+.main .video-info video {
+  width: 100%;
+}
+.main .video-info .vide-title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}
+.main .video-info .video-detail {
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+.main .video-info .video-detail .author {
+  color: #000;
+  font-weight: bold;
+}
+.main .video-info .video-detail text:not(:first-child) {
+  margin-left: 15rpx;
+}
+.main .other-list {
+  margin-top: 10rpx;
+}
+.main .other-list .item-other {
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.main .other-list .item-other .other-img-wrap {
+  width: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .other-list .item-other .other-img-wrap image {
+  width: 90%;
+  border-radius: 15rpx;
+}
+.main .other-list .item-other .other-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main .other-list .item-other .other-info .other-title {
+  font-size: 30rpx;
+  color: #e06f93;
+}
+.main .other-list .item-other .other-info .other-detail {
+  font-size: 26rpx;
+  color: #666;
+}

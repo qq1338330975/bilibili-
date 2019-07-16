@@ -1,0 +1,45 @@
+.wrapper{
+    display: flex;
+    text-align: center;
+    padding: 10px 0;
+    /* border: 1px solid black; */
+}
+.wrapper .logo{
+    margin-left: -150rpx;
+    flex: 7;
+}
+.wrapper .logo .logo-image{
+    width: 140rpx;
+    height: 60rpx;
+}
+.wrapper .search_icon{
+    flex: 1;
+}
+.wrapper .search_icon image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.wrapper .user_icon{
+    flex: 2;
+}
+.wrapper .user_icon image{
+    width: 54rpx;
+    height: 60rpx;
+}
+.wrapper .search_icon,
+.wrapper .user_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper .down_app{
+    flex: 3;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: pink;
+    color: #fff;
+    border-radius: 10rpx;
+    padding: 10rpx;
+}

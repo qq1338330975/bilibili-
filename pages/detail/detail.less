@@ -1,0 +1,59 @@
+// 视频
+.main{
+    padding: 10rpx;
+    color: #666;
+    .video-info{
+        margin-top: 10rpx;
+        video{
+            width: 100%;
+        }
+        .vide-title{
+            display: flex;
+            justify-content: space-between;
+            font-size: 35rpx;
+        }
+        .video-detail{
+            margin-top: 5rpx;
+            font-size: 28rpx;
+            .author{
+                color: #000;
+                font-weight: bold;
+            }
+            text:not(:first-child){
+             margin-left: 15rpx;   
+            }
+        }
+    }
+    .other-list{
+        margin-top: 10rpx;
+        .item-other{
+            margin-bottom: 20rpx;
+            display: flex;
+            justify-content: space-between;
+            .other-img-wrap{
+                width: 38%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    width: 90%;
+                    border-radius: 15rpx;
+                }
+            }
+            .other-info{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .other-title{
+                    font-size: 30rpx;
+                    color: #e06f93;
+                }
+                .other-detail{
+                    font-size: 26rpx;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
